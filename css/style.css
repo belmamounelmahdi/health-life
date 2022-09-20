@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --green-color: #00b39b;
+    --blue-color: #0d6efd;
+    --blue-light-color: #c7eee9;
+}
+@media (max-width: 576px) {
+    #home .landing .title-landing h1 {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .fitness {
+        flex-direction: column;
+        
+    }
+    .fitness .head-fitness, .fitness .head-fitness .objectif {
+        display: none;
+    }
+    .fitness .foot-fitness {
+        margin-top: 50%;
+        margin-left: 6%;
+    }
+    #home .landing .title-landing h3 {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .head-reccettes p {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .container .row .card {
+        margin-top: 30px;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    #home .landing .title-landing h1 {
+        margin-left: 5px;
+    }
+    #home .landing .title-landing h3 {
+        margin-left: 5px;
+    }
+
+}
+body {
+    height: 10000px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Start NavBar */ 
+.navbar .container-fluid .navbar-brand img {
+    width: 120px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--blue-color);
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--green-color);
+}
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: var(--green-color);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+/* End NavBar */ 
+
+/* Start Landing */
+.landing {
+    background-image: url(../imgs/salad-bowl.jpg);
+    min-height: calc(100vh - 72px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.title-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#home .landing .title-landing h1 {
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: 35vh;
+}
+#home .landing .title-landing h3 {
+    text-shadow: 1px 1px white;
+}
+/* End Landing */ 
+
+/* Start Reccettes */
+.reccettes {
+    margin-top: 50px;
+}
+.head-reccettes h3 {
+    color: var(--green-color);
+}
+.container .row .card {
+    margin-left: 20px;
+}
+/* End Reccettes */
+/* Start Fitness */
+.fitness {
+    margin-top: 100px;
+    background-image: url(../imgs/Fitness1.jpg);
+    min-height: calc(100vh);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.fitness .head-fitness {
+    padding: 40px;
+}
+.fitness .head-fitness h3 {
+    color: rgb(15, 15, 95);
+}
+.fitness .foot-fitness {
+    align-self: center;
+    padding-right: 30px;
+}
+.fitness .foot-fitness h4 {
+    color: rgb(248, 162, 3);
+}
+.fitness .head-fitness .objectif {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.fitness .head-fitness .objectif h4 {
+    color: rgb(15, 15, 95);
+}
+/* End Fitness */
